@@ -1,0 +1,120 @@
+body { /* grunnleggende info om bakgrunn og skrifttype */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+
+a { /* gir informasjon om linkene */
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    letter-spacing:inherit
+  }
+    a:link, a:visited {
+       text-decoration:none
+    }
+    a:hover {
+     text-decoration: underline;
+      color: #b7b7b7;
+    }
+    a:active {
+      text-decoration:none
+    }
+    a:disabled {
+      opacity:.32
+    }
+    
+
+
+
+#hub {        /* lager en grå hub som er "sticky" */
+  width: auto;                        
+  color: #ffffff;                 
+  margin: 0px ;                     
+  padding: 9px 9px;                
+  position: sticky;
+  top: 0px;
+  background-color: #727272;      
+  border: 1px solid #727272;       
+  }
+
+
+#hovedsvart{ /* definerer ulike verdier for svart boks */
+  width: auto;                        /* bredde av vinduet */
+  color: #ffffff;                   /* skriftfarge */
+  margin: auto ;                      /* storrelse pa margin */
+  padding: 20px 50px;                 /* luft mellom kantlinjene og innholdet */
+  padding-bottom: 5px;                /* luft mellom kantlinjene og innholdet pa bunnen*/
+  background-color: #000000;        /* bakgrunnsfarge */
+  border: 10px solid #000000;       /* farge pa kantlinje */
+  }    
+
+#svart{   /* samme som over uten egen definert "padding bottom */
+  width: auto;                       
+  color: #ffffff;
+  margin: auto ;        
+  padding: 20px 50px;
+  background-color: #000000;   
+  border: 1px solid #000000; 
+  }
+
+#hovedhvit{   /* samme kommandoer som "hovedsvart", bare andre farger */
+  width: auto;                       
+  color: #000000;
+  margin: auto ;        
+  padding: 20px 50px;             
+  padding-bottom: 100px;             
+  background-color: #ffffff;   
+  border: 10px solid #ffffff; 
+  }
+
+
+#hvit{        /* samme som over uten egen definert "padding bottom */
+  width: auto;                       
+  color: #000000;
+  margin: auto ;        
+  padding: 20px 50px;            
+  background-color: #ffffff;   
+  border: 1px solid #ffffff; 
+  }
+
+#bunn{        /* samme kommandoer som i feltene ovenfor, definert for "bunn" */
+  width: auto;                        
+  color: #ffffff;
+  margin: auto ;        
+  padding: 20px 50px;          
+  background-color: #000000;  
+  border: 10px solid #000000; 
+    }
+
+.center {     /* sentrerer logo med bredde på 23px */
+  display:block;
+  margin: auto;
+  width: 23px;
+  }
+
+.row {        /* lager en rad med flex */
+  display: flex;
+  }
+
+.column {  /* lager en kolonne med flex */
+  flex: 50%;
+  padding: 1px 3px;
+  }
+    
+.columnpad {   /* lager en kolonne med flex med tykkere padding */
+  flex: 50%;
+  padding: 20px;
+  }
+
+.columnlogo { /* lager en kolonne tilpasset logoen i huben */
+    flex: 50%;
+    height: 50%;
+    padding: 0px;
+    }
+
+
+h1, h3, a { text-align: center;}   /* midtstiller følgende skrifter */
